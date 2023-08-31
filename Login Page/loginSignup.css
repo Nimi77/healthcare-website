@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height:100vh;
+}
+.splitted-sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.bcg-section{
+    width:100%;
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(0deg,  rgba(1, 49, 61, 0.9),  
+    rgba(1, 44, 55, 0.62)), url(./landingPageBg.jpg);
+}
+.logIn{
+    background-color:#fdfdfd;
+    width:100%;
+    height:100vh;
+    padding:19%;
+}
+.splitted-sections .form-hidden{
+    display: none;
+}
+.login-section .container{
+    margin:auto;
+}
+.container .form-heading{
+    margin-bottom:12px;
+}
+.form-heading h2{
+    color: #01313d;
+}
+.form-heading p{
+    font-size: 14px;
+    color:#101010;
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:18px;
+    margin-top:24px;
+    margin-bottom:16px;
+}
+.user-info .user-input{
+    display: block;
+    width:100%;
+    padding: 0.6rem;
+    margin-top:8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border:1px solid #dddddd;
+    outline: none;
+    background: transparent;
+}
+.user-info .user-input:focus{
+    border: 1px solid #01313d;
+    background: #fff;
+}
+.user-info label{
+    font-size: 14px;
+}
+.container .psw-scrutiny{
+    display: flex;
+    font-size: .88rem;
+    justify-content: space-between;
+}
+.psw-scrutiny .rememberMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px
+}
+.psw-scrutiny .forgetpsw a{
+    color:#01313d;
+    font-weight: 500;
+}
+.container .form-btn{
+    width:100%;
+    background-color: #01313d;;
+    margin:26px 0 12px;
+    border: none;
+    border-radius: 4px;
+    padding: .6rem 2rem;
+    font-size:1rem;
+    color:#ffff;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background: #012b35;
+}
+.form-btn:active{
+    transform: scale(0.98);
+}
+.external-link p{
+    font-size: .88rem;
+}
+.external-link a{
+    text-decoration: none;
+    color:#01313d;
+    font-weight: 500;
+    cursor:pointer;
+}
+.external-link a:hover{
+    text-decoration: underline;
+}
+/* signup section */
+.signUp{
+    background-color:#fdfdfd;
+    width:100%;
+    height:100vh;
+    padding: 12% 18%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Login Page/loginSignup.css">
+</head>
+<body>
+    <div class="splitted-sections">
+        <div class="bcg-section" id="loginImg">
+          
+        </div>
+        <div class="logIn  form-hidden" id="login">
+            <div class="container">
+                <div class="form-heading">
+                    <h2>Login</h2>
+                    <p>See your growth and get consulting support!</p>
+                </div>
+                <div class="login-box">
+                    <div class="user-info">
+                        <label for="email">Email</label>
+                        <input type="email" class="user-input" id="input-Username" placeholder="mail@gmail.com"  autofocus required>
+                    </div>
+                    <div class="user-info">
+                        <label for="password">Password</label>
+                        <input type="password" class="user-input" placeholder="Min. 8 character" autofocus required>
+                    </div>
+                </div>
+                <div class="psw-scrutiny">
+                    <div class="rememberMe">
+                        <input type="checkbox" class="rPassword" >
+                        <label>Remember Me</label>
+                    </div>
+                    <div class="forgetpsw">
+                       <a href="#" class="form-link">Forget password?</a>
+                    </div>
+                </div>
+                <button class="form-btn" type="submit">Login</button>
+                <div class="external-link">
+                    <p>Not registered yet? <a class="form-link" id="createAccountLink">Create an Account</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="signUp" id="signUp">
+            <div class="container">
+                <div class="form-heading">
+                    <h2>Sign Up</h2>
+                    <p>See your growth and get consulting support!</p>
+                </div>
+                <div class="signUp-box login-box">
+                    <div class="user-info">
+                        <label for="name">Name</label>
+                        <input type="text" class="user-input" id="input-Username" placeholder="Name" autofocus required>
+                    </div>
+                    <div class="user-info">
+                        <label for="email">Email</label>
+                        <input type="email" class="user-input" placeholder="mail@gmail.com"  autofocus required>
+                    </div>
+                    <div class="user-info">
+                        <label for="password">Password</label>
+                        <input type="password" class="user-input" placeholder="Min. 8 character"  autofocus required>
+                    </div>
+                </div>
+                <div class="psw-scrutiny">
+                    <div class="rememberMe">
+                        <input type="checkbox" class="rPassword" >
+                        <label>I agree to the Terms & Conditions</label>
+                    </div>
+                </div>
+                <button class="form-btn" id="signUp-btn"  type="submit">Sign Up</button>
+                <div class="external-link">
+                    <p>Already have an Account? <a class="form-link" id="loginLink">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Login Page/loginSignup.js"></script>
+</body>
+</html>
