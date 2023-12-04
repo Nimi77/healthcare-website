@@ -59,12 +59,13 @@
                     </span>
                     <div class="sld-text">
                         <strong>Find Doctor</strong>
-                        <p>We're here to help whenever you feel, but keeping you
+                        <p class="slide-info">We're here to help whenever you feel, but keeping you
                         healthy is our better priority, our specialist gives you the best diagnostics and treatments  
+                            <span class="sld-text-rm">We are here to help whenever you are ready scheduling allows us to manage your availability</span>
                         </p>
                     </div>
                     <div class="sld-btn">
-                        <a href="#" class="active">See more <i class="fa-solid fas fa-arrow-right"></i></a>
+                        <a href="#" class="active s-button">See more <i class="fa-solid fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="appt sld">
@@ -433,8 +434,17 @@
             </div>
             <div class="subscribe-emailbox">
                 <input type="email" placeholder="example@gmail.com">
-                <button>Subscribe</button>
+                <button type="submit" id="subscribe">Subscribe</button>
             </div>
+            <div id="notification-container">
+                <div class="notificationAlert">
+                    <p id="notAlert">You've succesfully subscribe to our Email Newsletter. Kindly
+                        check your Gmail box to confirm your email address.
+                    </p>
+                    <button type="button" id="close">Ok!</button>
+                </div>
+            </div>
+           
         </div>
     </section>
     <!-- Footer -->

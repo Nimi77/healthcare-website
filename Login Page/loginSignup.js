@@ -13,13 +13,46 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.classList.remove("form-hidden");
         signupForm.classList.add("form-hidden");
     })
-    document.querySelector("#signUp-btn").addEventListener("click", e => {
+    
+    function showLoginForm(){
+        document.querySelector("#signUp-btn").addEventListener("click", e => {
+            e.preventDefault();
+            loginForm.classList.remove("form-hidden");
+            signupForm.classList.add("form-hidden");
+        })
+    }
+   
+
+    // validation for the login form before submission
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let username = document.getElementById("username")
+
+    const formLogin = document.getElementById("loginForm");
+    formLogin.addEventListener("submit", (e) => {
         e.preventDefault();
-        loginForm.classList.remove("form-hidden");
-        signupForm.classList.add("form-hidden");
-    })
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-        setFormMessage(loginForm, "error", "Invalid Login info")
+        
+        if (email.value == "" || password.value == ""){
+            alert("Input your details")
+        }else{
+            alert("form submitted successfully");
+            console.log(`$(email.value)`)
+        };
+        email.value = "";
+        password.value = "";
+        // setFormMessage(loginForm, "error", "Invalid Login info")
     });
+    
+    const formSignup = document.getElementById("signupForm");
+    formSignup.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if(email.value == null || username.value == null || password.value == null ){
+            alert("You can't login")
+        }
+        else{
+            alert("You can login") ;
+            showLoginForm();
+        }
+     
+    })
 })

@@ -1,3 +1,22 @@
+const slidesButton = document.querySelector(".sld-btn");
+const slideInfo = document.querySelector(".slide-info");
+const slideText= document.querySelector(".sld-text");
+const readMore = document.querySelector(".sld-text-rm");
+function seeMore(){
+    if( slideText.classList.contains("slide-info"))
+    {
+        slideText.classList.remove("slide-info")
+    }
+    else{
+        slideText.classList.add("slide-info")
+    }
+}
+slidesButton.addEventListener("click", seeMore);
+const p = document.querySelector('p');
+console.log(p.classList.contains('slide-info'))
+
+
+
 const testimonials = [
     {
         name: "Marvelous Hem",
@@ -46,7 +65,7 @@ prevBtn.addEventListener("click", ()=> {
     displayTestimonial();
 });
 
-let displayTestimonial = () => {
+let displayTestimonial = function() {
     testimonialContainer.innerHTML = `
     <p>${testimonials[i].testimonial}</p>
     <img src=${testimonials[i].image}>
@@ -56,6 +75,24 @@ let displayTestimonial = () => {
     
 }
 window.onload = displayTestimonial;
+
+//Subscribe Submit Button
+let popAlert = document.getElementById('notification-container');
+let openNotification = document.getElementById('subscribe');
+let closeNotification = document.getElementById('close');
+
+openNotification.addEventListener('click', ()=>{
+    popAlert.style.display = 'block';
+})
+closeNotification.addEventListener('click', ()=>{
+    popAlert.style.display = 'none';
+})
+window.addEventListener('click', function(e){
+    if(e.target === popAlert){
+        popAlert.style.display = 'none';
+    }
+})
+
 
 //Hamburger
 var hamburger = document.querySelector(".hamb");
